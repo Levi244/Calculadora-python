@@ -14,11 +14,18 @@ janela.title("Calculadora")
 janela.geometry("235x310")
 janela.config(bg=cor1)
 
+#Tela
+
 frame_tela = Frame(janela, width=235, height=50, bg=cor3)
 frame_tela.grid(row=0, column=0)
 
 frame_corpo = Frame(janela, width=235, height=268)
 frame_corpo.grid(row=1, column=0)
+
+#Label
+
+app_label = Label(frame_tela, text='123456789', width=16, height=2, padx=7, relief=FLAT, anchor="e", justify=RIGHT, font=('Ivy 18 '), bg=cor3, fg=cor2)
+app_label.place(x=0,y=0)
 
 #Botões
 
